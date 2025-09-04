@@ -1,6 +1,7 @@
 
 def calcular_media(valores):
-    # TODO: tratar lista vazia para evitar divisão por zero
+    if not valores:         
+        return None
     soma = sum(valores)
     return soma / len(valores)
 
